@@ -19,7 +19,7 @@ class Place extends React.Component {
                             TEL:{this.props.info.tel}
                         </div>
                     </div>
-                    <a href={this.props.info.url} className="btn btn-outline-success" variant="primary" >Webサイトをみる</a>
+                    <a href={`https://www.google.com/maps/dir/?api=1&origin=${this.props.info.location.latitude},${this.props.info.location.longitude}&destination=${this.props.lat},${this.props.lng}`} className="btn btn-outline-success" variant="primary" >お店までの道順を見る</a>
                 </Card.Body>
             </Card>
         );
