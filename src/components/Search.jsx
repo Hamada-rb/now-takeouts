@@ -83,7 +83,7 @@ class Search extends React.Component {
                         if (result) {
                             return (
                                 <Col sm={12} md={4} lg={4} className="mt-2" key={i}>
-                                    <Place info={data} />
+                                    <Place info={data} lat={this.state.latitude} lng={this.state.longitude}/>
                                 </Col>
                             );
                         } else {
